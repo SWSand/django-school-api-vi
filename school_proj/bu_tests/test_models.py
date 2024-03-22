@@ -4,7 +4,9 @@ from django.core.exceptions import ValidationError
 from django.db import IntegrityError, DataError
 from student_app.serializers import StudentAllSerializer, StudentSerializer
 
+
 # Create your tests here.
+
 
 ## PART I
 class Test_student(TestCase):

@@ -13,6 +13,6 @@ class Grade(models.Model):
         blank=False,
         null=False,
         validators=[v.MaxValueValidator(100.00), v.MinValueValidator(0.00)],
-    )
+)
     a_subject = models.ForeignKey(Subject, related_name="grades", on_delete=models.SET_NULL, null=True)
     student = models.ForeignKey(Student, related_name="grades", on_delete=models.SET_NULL, null=True)
